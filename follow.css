@@ -1,0 +1,100 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+body {
+    overflow: hidden;
+    background-image: linear-gradient(30deg, #0439D9 50%, #07038C 50%);
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.iconbox {
+    width: 80px;
+    height: 80px;
+    background: #F20505;
+    border: 2px solid white;
+    margin: 0% 50px;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    background: #07038C;
+    position: relative;
+    transition: .5s;
+}
+
+.iconbox:hover .icon {
+    transform: rotate(45deg);
+    background: white;
+}
+
+.backicon {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(30deg, rgb(200, 4, 4) 50%, #F20505 50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    transition: .5s;
+}
+
+.iconbox:hover .backicon {
+    background: linear-gradient(30deg, rgb(200, 4, 4) 50%, #F20505 50%);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+i {
+    font-size: 40px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.iconbox:hover .icon a i {
+    transform: translate(-50%, -50%) rotate(360deg);
+    color: #F20505;
+}
+
+.backicon i {
+    font-size: 35rem;
+    color: #07038C;
+}
+
+.iconbox:hover {
+    box-shadow: 0 0 5px black;
+}
+
+h1 {
+    font-size: 20rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    width: 90%;
+    text-transform: capitalize;
+    color: rgb(200, 4, 4);
+    opacity: .8;
+    z-index: -1;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 5rem;
+    color: #0439D9;
+}
